@@ -7,7 +7,7 @@
 	and/or legitimate user error. 
 	//Try and Catch blocks are used in error checking
 	Teacher: Dr. Tyson McMillan, Ph.D.  
-  STUDENT (KietVo9): Unit_4_Assignment
+  STUDENT (KietVo9): Unit_4_Assignment||COSC1436_57002
 */
 #include <cstdlib>  // Provides EXIT_SUCCESS
 #include <iostream>  // Provides cout, cerr, endl
@@ -19,6 +19,7 @@ using namespace std;
 
 int main()
 {
+  int counter = 0; //starting point
   double n = 0.0, timeItself = 0.0, divideItself =0.0, output1 = 0.0, output2 = 0.0;//Declare and initialize variable
   do
   {
@@ -42,11 +43,11 @@ int main()
         cout << "(" <<" n "<<" + "<<" 3 "<<") "<<" / "<<" 5 "<< " = " << output1 <<endl;
         cout <<"(" <<" n "<<" + "<<" 3 "<<") "<<" / "<<" 5 "<<" + "<<" (" <<" n "<<" + "<<" 7 "<<") "<<" / "<<" 2 "<<" = " << output2 << endl;
       }
-
+        counter++;
   }while(n != -1); //end do
+   //increment counter
+    cout << "\nThis program ran " << counter;
+    cout << " times."; 
 
-  //Couter variable
-  
-   
     return 0;
 }
